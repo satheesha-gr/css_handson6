@@ -1,0 +1,487 @@
+/*for laptop*/
+
+@media screen and (min-width: 1000px) {
+    body {
+      background: url(./images/sahara-desert.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+  
+    .container {
+      display: grid;
+      grid-template: 6rem auto / repeat(2, auto);
+      grid-template-areas:
+        "header header"
+        "about  cards";
+      gap: 1rem;
+      align-items: center;
+      width: fit-content;
+      height: fit-content;
+    }
+  
+    .box1 {
+      grid-area: header;
+    }
+  
+    .box2 {
+      grid-area: about;
+      color: white;
+      padding: 0 4rem;
+    }
+  
+    .box3 {
+      grid-area: cards;
+      padding: 0 4rem;
+      display: grid;
+      grid-template: repeat(2, auto) / repeat(2, auto);
+      gap: 1.5rem 2rem;
+      position: relative;
+    }
+  
+    .navbar {
+      display: flex;
+      margin-top: 2rem;
+    }
+  
+    .logo img {
+      width: 5rem;
+      height: 4rem;
+      margin-left: 3rem;
+      padding-left: 1rem;
+    }
+  
+    .links {
+      display: flex;
+      align-items: center;
+      margin-right: 3rem;
+      position: absolute;
+      right: 0;
+    }
+  
+    .links ul {
+      display: flex;
+      color: white;
+    }
+  
+    ul li {
+      padding-right: 2rem;
+      list-style-type: none;
+    }
+  
+    .links img {
+      width: 3rem;
+      height: 3rem;
+      padding-left: 1rem;
+      padding-right: 3rem;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+  
+    h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 7rem;
+    }
+    p {
+      margin: 0;
+    }
+  
+    button {
+      background: white;
+      border: none;
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: "Times New Roman", Times, serif;
+      padding: 1rem 4rem;
+      border-radius: 30px;
+    }
+  
+    .card {
+      width: 15rem;
+      height: 15rem;
+      border-radius: 15px;
+      filter: brightness(80%);
+      transition: transform 250ms;
+    }
+  
+    .card:hover {
+      transform: translateY(-10px);
+    }
+  
+    .text {
+      color: white;
+    }
+  
+    .card1 {
+      background-image: url(./images/pic1.png);
+      border-radius: 15px;
+    }
+  
+     .card2 {
+      background-image: url(./images/pic2.png);
+      border-radius: 15px;
+    }
+     .card3 {
+      background-image: url(./images/pic3.png);
+      border-radius: 15px;
+    }
+     .card4 {
+      background-image: url(./images/pic4.png);
+      border-radius: 15px;
+    }
+  
+    h3 {
+      padding-left: 2rem;
+      margin-bottom: 0;
+    }
+  
+    .text p {
+      padding-left: 2rem;
+    }
+}
+
+/*for mobile*/
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    body {
+      background: url(./images/sahara-desert.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+  
+    .container {
+      display: grid;
+      grid-template: repeat(6, auto) / auto;
+      grid-template-areas:
+        "header"
+        "about"
+        "card-one"
+        "card-two"
+        "card-three"
+        "card-four";
+      gap: 1rem;
+      align-items: center;
+    }
+  
+    .box1 {
+      grid-area: header;
+    }
+  
+    .box2 {
+      grid-area: about;
+      padding: 0 2rem ;
+    }
+
+    .box3 {
+        display: grid;
+        grid-template: repeat(4, auto) / auto;
+        grid-template-areas: "card-one" "card-two" "card-three" "card-four";
+        gap: 1.5rem 2rem;
+        justify-content: center;
+        position: relative;
+    }
+  
+    .card1 {
+      grid-area: card-one;
+    }
+  
+    .card2 {
+      grid-area: card-two;
+    }
+  
+    .card3 {
+      grid-area: card-three;
+    }
+  
+    .card4 {
+      grid-area: card-four;
+    }
+  
+    .navbar {
+      display: flex;
+      align-items: center;
+      margin-top: 2rem;
+    }
+    ul {
+      display: inline;
+    }
+  
+    .logo img {
+      width: 5rem;
+      height: 4rem;
+      margin-left: 1rem;
+      padding-left: 1rem;
+    }
+  
+    .links {
+      display: flex;
+      align-items: center;
+      margin-right: 0.5rem;
+      position: absolute;
+      right: 0;
+    }
+
+    .links ul {
+      color: white;
+    }
+
+    ul li {
+      padding-right: 1rem;
+      list-style-type: none;
+    }
+
+    .links img {
+      width: 3rem;
+      height: 3rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+  
+    h1 {
+      color: white;
+      margin: 0;
+      font-weight: 700;
+      font-size: 4rem;
+    }
+
+    p {
+      color: white;
+      margin: 0;
+    }
+  
+    button {
+      background: white;
+      border: none;
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: "Times New Roman", Times, serif;
+      padding: 1rem 4rem;
+      border-radius: 30px;
+    }
+  
+   .card {
+      width: 15rem;
+      height: 15rem;
+      border-radius: 15px;
+      filter: brightness(80%);
+      transition: transform 250ms;
+    }
+  
+    .text {
+      color: white;
+    }
+  
+   .card:hover {
+      transform: translateY(-10px);
+    }
+  
+    .card1 {
+      background-image: url(./images/pic1.png);
+      border-radius: 15px;
+    }
+  
+     .card2 {
+      background-image: url(./images/pic2.png);
+      border-radius: 15px;
+    }
+     .card3 {
+      background-image: url(./images/pic3.png);
+      border-radius: 15px;
+    }
+     .card4 {
+      background-image: url(./images/pic4.png);
+      border-radius: 15px;
+    }
+  
+   h3 {
+      padding-left: 2rem;
+      margin-bottom: 0;
+    }
+  
+    .text p {
+      padding-left: 2rem;
+    }
+}
+
+/*for tablet*/
+
+@media screen and (min-width: 481px) and (max-width: 999px) {
+    body {
+      background: url(./images/sahara-desert.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+  
+    .container {
+      display: grid;
+      grid-template: repeat(6, auto) / auto;
+      grid-template-areas:
+        "header"
+        "about"
+        "card-one"
+        "card-two"
+        "card-three"
+        "card-four";
+  
+      gap: 1rem;
+      align-items: center;
+    }
+  
+    .box1 {
+      grid-area: header;
+    }
+  
+    .box2 {
+      grid-area: about;
+      padding: 0 2rem;
+    }
+    
+    .box3 {
+        display: grid;
+        grid-template: repeat(4, auto) / auto;
+        grid-template-areas: "card-one" "card-two" "card-three" "card-four";
+        gap: 1.5rem 2rem;
+        justify-content: stretch;
+        position: relative;
+    }
+  
+    .card1 {
+      grid-area: card-one;
+    }
+  
+    .card2 {
+      grid-area: card-two;
+    }
+  
+    .card3 {
+      grid-area: card-three;
+    }
+  
+    .card4 {
+      grid-area: card-four;
+    }
+  
+    .navbar {
+      display: flex;
+      align-items: center;
+      margin-top: 2rem;
+    }
+    ul {
+      display: inline;
+    }
+  
+    .logo img {
+      width: 5rem;
+      height: 4rem;
+      margin-left: 1rem;
+      padding-left: 1rem;
+    }
+  
+    .links {
+      display: inline-flex;
+      align-items: center;
+      margin-right: 0.5rem;
+      position: absolute;
+      right: 0;
+    }
+    .links ul {
+      color: white;
+    }
+    ul li {
+      display: inline;
+      padding-right: 1rem;
+      list-style-type: none;
+    }
+    .links img {
+      width: 3rem;
+      height: 3rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+  
+    h1 {
+      color: white;
+      margin: 0;
+      font-weight: 700;
+      font-size: 6rem;
+    }
+    p {
+      color: white;
+      margin: 0;
+      font-size: 2rem;
+    }
+  
+    button {
+      background: white;
+      border: none;
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: "Times New Roman", Times, serif;
+      padding: 1rem 4rem;
+      border-radius: 30px;
+    }
+  
+    .card {
+      width: auto;
+      height: 25rem;
+      border-radius: 15px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: brightness(80%);
+      transition: transform 250ms;
+    }
+  
+    .text {
+      color: white;
+    }
+  
+    .card:hover {
+      transform: translateY(-10px);
+    }
+  
+    .card1 {
+      background-image: url(./images/pic1.png);
+      border-radius: 15px;
+    }
+  
+    .card2 {
+      background-image: url(./images/pic2.png);
+      border-radius: 15px;
+    }
+
+    .card3 {
+      background-image: url(./images/pic3.png);
+      border-radius: 15px;
+    }
+
+    .card4 {
+      background-image: url(./images/pic4.png);
+      border-radius: 15px;
+    }
+    
+    h3 {
+      padding-left: 2rem;
+      margin-bottom: 0;
+      font-size: 3rem;
+    }
+  
+    .text p {
+      padding-left: 2rem;
+    }
+}
